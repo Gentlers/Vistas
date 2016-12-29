@@ -1,0 +1,74 @@
+.nav-wrapper a img {
+  padding-top: 17px;
+  margin-left: 20px; }
+.nav-wrapper li a {
+  font-family: helvetica2; }
+  .nav-wrapper li a:hover {
+    color: #4f82c2; }
+  .nav-wrapper li a:active {
+    color: #4f82c2; }
+
+.parallax-container {
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.parallax img {
+  height: 700px;
+  transform: translate3d(-70%, 103px, 0px); }
+
+.how {
+  background: black;
+  height: 640px;
+  padding-top: 15px;
+  color: white; }
+  .how .how-text h3, .how .how-text span {
+    font-family: helvetica3; }
+  .how .how-iphone {
+    background-image: url("../img/inicio/how/is.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 290px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto; }
+    .how .how-iphone .slider-how {
+      max-width: 260px;
+      height: 500px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+      .how .how-iphone .slider-how .slides {
+        background-color: rgba(255, 255, 255, 0); }
+        .how .how-iphone .slider-how .slides li {
+          margin-top: 80px; }
+        .how .how-iphone .slider-how .slides img {
+          height: 440px; }
+
+.selections h3 {
+  text-align: center; }
+.selections .selections1 {
+  max-height: 370px;
+  width: 218px; }
+  .selections .selections1 img {
+    max-height: 300px;
+    width: 218px; }
+
+.card {
+  margin-left: auto;
+  margin-right: auto; }
+  .card .card-content {
+    padding: 10px; }
+    .card .card-content .card-title-size {
+      font-size: 18px;
+      line-height: 30px; }
+
+.partner {
+  margin-left: auto;
+  margin-right: auto; }
+  .partner p {
+    text-align: center; }
+  .partner img {
+    max-width: 100px;
+    display: block;
+    margin: auto; }
+
+/*# sourceMappingURL=inicio.css.map */
