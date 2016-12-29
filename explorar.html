@@ -1,94 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags-->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Gento-explorar</title>
-
-    <!-- Bootstrap core CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    <!-- Gento css files-->
-    <link rel="stylesheet" href="css/custom.css" attr>
-    <!--jquery and bootstrap js files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
+
   <body>
-    <h1>EXPLORAR</h1>
-    <div class="registro-gral">
-      <div class="">
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Nombres</label>
-            <input type="email" class="form-control" id="" placeholder="Nombres">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Apellidos</label>
-            <input type="email" class="form-control" id="" placeholder="Apellidos">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Edad</label>
-            <input type="email" class="form-control" id="" placeholder="">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Correo</label>
-            <input type="email" class="form-control" id="" placeholder="ejemplo@gmail.com">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-      </div>
-    </div>
+    <header>
+      <nav>
+        <div class="nav-wrapper black">
 
-    <!-- NOTE: FOOTER -->
-    <footer>
+          <a href="#!" class="brand-logo"><img src="img/inicio/header/logo.png" alt=""></a>
+          <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 
-      <div class="col-sm-12">
-        <div class="col-md-4">
-          <ul>
-            <li>COLECCIONES</li>
-            <li><a href="">Mujer</a></li>
-            <li><a href="">Hombre</a></li>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html" class="active">INICIO</a></li>
+            <li><a href="#">EXPLORAR</a></li>
+            <li><a href="#">REGISTRATE</a></li>
           </ul>
+
+          <ul id="slide-out" class="side-nav">
+            <li><div class="userView">
+              <div class="background">
+                <img src="images/office.jpg">
+              </div>
+              <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+              <a href="#!name"><span class="white-text name">John Doe</span></a>
+              <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div></li>
+            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+            <li><a href="#!">Inicio</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">Explorar</a></li>
+            <li><a class="waves-effect" href="#!">Regístrate</a></li>
+          </ul>
+
         </div>
-        <div class="col-md-4">
-          <ul>
-            <li>INFORMACION CORPORATIVA</li>
-            <li><a href="">Trabaja en Gento</a></li>
-            <li><a href="">Acerca de Gento</a></li>
-            <li><a href="">Relacion de iversores</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul>
-            <li>AYUDA</li>
-            <li><a href="">Atención al cliente</a></li>
-            <li><a href="">Mi cuenta Gento</a></li>
-            <li><a href="">Privacidad y términos legales</a></li>
-          </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="row">
+        <div class="explorar">
+          <div class="explorar-1">
+
+          </div>
+          <div class="explorar-2">
+            <div class="row">
+              <div class="col s12">
+                This is an inline input field:
+                <div class="input-field inline">
+                  <input id="email" type="email" class="validate">
+                  <label for="email" data-error="wrong" data-success="right">Email</label>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-sm-12">
-        <div class="col-sm-12">
+
+      <!-- NOTE: WHY USE GENTO -->
+        <div class="parallax-container valign-wrapper">
+          <div class="row valign">
+            <div class="col s12 why-1">
+              <p class="why-text">¿Por qué comprar en Gento?</p>
+            </div>
+            <div class="col s12">
+                <div class="col l4 m4 s12 ">
+                  <div class="col l12 m12 s6">
+                    <img src="img/inicio/why/01.png" alt="">
+                  </div>
+                  <div class="col l12 m12 s6">
+                    <p>¿No encuentras las prendas correctas?</p>
+                  </div>
+                </div>
+                <div class="col l4 m4 s12 ">
+                  <div class="col l12 m12 s6">
+                    <img src="img/inicio/why/02.png" alt="">
+                  </div>
+                  <div class="col l12 m12 s6">
+                    <p>Una simple foto no te dice cómo te quedará</p>
+                  </div>
+                </div>
+                <div class="col l4 m4 s12 ">
+                  <div class="col l12 m12 s6">
+                    <img src="img/inicio/why/03.png" alt="">
+                  </div>
+                  <div class="col l12 m12 s6">
+                  <p>¿Pierdes demasiados tiempo y dinero buscando?</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="parallax">
+            <img src="img/1.jpg">
+          </div>
+        </div>
+
+        <!-- NOTE: PART HOW TO USE GENTO -->
+        <div class="row how">
+          <div class="col l5 m6 s12">
+            <div class="how-iphone">
+             <div class="slider slider-how">
+              <ul class="slides">
+                <li>
+                  <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+                  <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                  </div>
+                </li>
+                <li>
+                  <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+                  <div class="caption left-align">
+                    <h3>Left Aligned Caption</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                  </div>
+                </li>
+                <li>
+                  <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+                  <div class="caption right-align">
+                    <h3>Right Aligned Caption</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                  </div>
+                </li>
+                <li>
+                  <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+                  <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </div>
+          <div class="col l7 m6 s12 how-text">
+            <div class="col s12">
+              <h3>Es muy facil</h3>
+            </div>
+            <div class="col s12">
+              <span>BUSCAR</span><br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisonem accusantium assumenda.</p>
+            </div>
+            <div class="col s12">
+              <span>EXPLORAR</span><br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisonem accusantium assumenda.</p>
+            </div>
+            <div class="col s12">
+              <span>DESCUBRIR</span><br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisonem accusantium assumenda.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SELECCIONES RECIENTES:  -->
+        <div class="row selections">
+          <h3><p>Selecciones recientes</p></h3>
+          <div class="col l3 m6 s12">
+            <div class="card selections1">
+              <div class="card-image selections2 waves-effect waves-block waves-light">
+                <img class="activator responsive-img" src="img/inicio/select/02.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title card-title-size activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12">
+            <div class="card selections1">
+              <div class="card-image selections2 waves-effect waves-block waves-light">
+                <img class="activator responsive-img" src="img/inicio/select/02.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title card-title-size activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col l3 m6 s12">
+            <div class="card selections1">
+              <div class="card-image selections2 waves-effect waves-block waves-light">
+                <img class="activator responsive-img" src="img/inicio/select/02.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title card-title-size activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col l3 m6 s12">
+            <div class="card selections1">
+              <div class="card-image selections2 waves-effect waves-block waves-light">
+                <img class="activator responsive-img" src="img/inicio/select/02.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title card-title-size activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
 
         </div>
-        <div class="col-sm-12">
-          <p style="color: rgb(71, 71, 71)">
-            El contenido de esta página web está protegido por copyright y es propiedad de Gento SAC.
-          </p>
-          <a class="" href="#"><img src="img/Inicio/Header/logo.png" alt="Brand"></a>
+
+        <div class="row partner">
+          <h3><p>Partners</p></h3>
+          <div class="col l3 m3 s6">
+            <a class="" href="#one!"><img src="img/inicio/partner/1551.png"><p>Incubadora de Empresas San Marcos</p></a>
+          </div>
+          <div class="col l3 m3 s6">
+            <a class="" href="#one!"><img src="img/inicio/partner/1551.png"><p>Incubadora de Empresas San Marcos</p></a>
+          </div>
+          <div class="col l3 m3 s6">
+            <a class="" href="#one!"><img src="img/inicio/partner/1551.png"><p>Incubadora de Empresas San Marcos</p></a>
+          </div>
+          <div class="col l3 m3 s6">
+            <a class="" href="#one!"><img src="img/inicio/partner/1551.png"><p>Incubadora de Empresas San Marcos</p></a>
+          </div>
+          </div>
+        </div>
+    </main>
+
+    <footer class="page-footer black">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2014 Copyright Gento.com
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
         </div>
       </div>
     </footer>
 
-    <script src="js/script1.js"></script>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="js/inicio.js"></script>
   </body>
 </html>

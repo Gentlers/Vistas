@@ -9,11 +9,24 @@
     color: #4f82c2; }
 
 .parallax-container {
-  background-color: rgba(0, 0, 0, 0.6); }
-
-.parallax img {
-  height: 700px;
-  transform: translate3d(-70%, 103px, 0px); }
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white; }
+  .parallax-container .row p {
+    text-align: center;
+    font-family: helvetica2; }
+  .parallax-container .row .why-text {
+    text-align: center;
+    font-family: helvetica3;
+    font-size: 25px; }
+  .parallax-container .row img {
+    display: block;
+    margin: auto;
+    max-width: 70px;
+    height: auto;
+    margin-top: 10px; }
+  .parallax-container .parallax img {
+    width: 1200px;
+    transform: translate3d(-70%, 103px, 0px); }
 
 .how {
   background: black;
