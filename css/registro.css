@@ -21,12 +21,32 @@
 }
 .hero-text{
   color: white;
+  font-size: 1em;
 }
 .sizes ul li{
   display: inline-block;
+  padding-bottom: 20px;
 }
 .styles{
   text-align: center;
   background: white;
   color: black;
+}
+
+@media (max-width: 500px) {
+  .hero-text div h1{
+    font-size: 20px;
+  }
+}
+
+@media (min-width:501px) and (max-width: 720px) {
+  .hero-text div h1{
+    font-size: 30px;
+  }
+}
+
+@media (min-width:701px) and (max-width: 1000px) {
+  .hero-text div h1{
+    font-size: 40px;
+  }
 }
