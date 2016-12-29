@@ -68,7 +68,7 @@
                   <input type="text" placeholder="¿Cuál es tu correo?" name="email" required>
                   <input type="text" placeholder="¿Cuál es tu whatsapp?" name="phone" required>
                 </form>
-                <button id="btn-know">Siguiente</button>
+                <button class="btn" id="btn-know">Siguiente</button>
               </div>
             </div>
           </div>
@@ -76,22 +76,104 @@
           <div class="row sizes">
             <div class="col l12 m12 s12">
               <h3> <strong>Cristhian</strong>, ¿cuáles son tus tallas? </h3>
-              <ul>
-                <ul>
-                  <li> <p> Camisa/Polo </p> </li>
-                  <li> <p> Talla </p> </li>
-                  <li> <p> Entalle </p> </li>
-                </ul>
-                <ul>
-                  <li> <p> Pantalon </p> </li>
-                  <li> <p> Talla </p> </li>
-                  <li> <p> Entalle </p> </li>
-                </ul>
-                <ul>
-                  <li> <p> Zapato </p> </li>
-                  <li> <p> Talla </p> </li>
-                  <li> <p> Entalle </p> </li>
-                </ul>
+               <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">filter_drama</i>Camisa</div>
+                  <div class="collapsible-body">
+                    <div class="input-field col s12">
+                      <select>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                      <label>Materialize Select</label>
+                    </div>
+                    <form>
+                      <p>
+                        <input name="group1" type="radio" id="test1" />
+                        <label for="test1">Red</label>
+                      </p>
+                      <p>
+                        <input name="group1" type="radio" id="test2" />
+                        <label for="test2">Yellow</label>
+                      </p>
+                      <p>
+                        <input class="with-gap" name="group1" type="radio" id="test3"  />
+                        <label for="test3">Green</label>
+                      </p>
+                    </form>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">people</i>Polo</div>
+                  <div class="collapsible-body">
+                    <div class="input-field col s12">
+                      <select>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                      <label>Materialize Select</label>
+                    </div>
+                    <form>
+                      <p>
+                        <input name="group1" type="radio" id="test1" />
+                        <label for="test1">Red</label>
+                      </p>
+                      <p>
+                        <input name="group1" type="radio" id="test2" />
+                        <label for="test2">Yellow</label>
+                      </p>
+                      <p>
+                        <input class="with-gap" name="group1" type="radio" id="test3"  />
+                        <label for="test3">Green</label>
+                      </p>
+                    </form>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">place</i>Pantalón</div>
+                  <div class="collapsible-body">
+                    <div class="input-field col s12">
+                      <select>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                      <label>Materialize Select</label>
+                    </div>
+                    <form>
+                      <p>
+                        <input name="group1" type="radio" id="test1" />
+                        <label for="test1">Red</label>
+                      </p>
+                      <p>
+                        <input name="group1" type="radio" id="test2" />
+                        <label for="test2">Yellow</label>
+                      </p>
+                      <p>
+                        <input class="with-gap" name="group1" type="radio" id="test3"  />
+                        <label for="test3">Green</label>
+                      </p>
+                    </form>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Zapato</div>
+                  <div class="collapsible-body">
+                    <div class="input-field col s12">
+                      <select>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                      <label>Materialize Select</label>
+                    </div>
+                </li>
               </ul>
               <button class="btn">Siguiente</button>
             </div>
@@ -103,10 +185,33 @@
                 <h3> <strong>Cristhian</strong> , ya estamos cerca <br>
                 Cuéntanos un poco sobre tu estilo </h3>
               </div>
-              <div class="styles-options">
-                
+              <div class="carousel carousel-slider center" data-indicators="true">
+                <!-- <div class="carousel-fixed-item center">
+                  <a class="btn waves-effect white grey-text darken-text-2">button</a>
+                </div> -->
+                <div class="carousel-item red white-text" href="#one!">
+                  <h2>First Panel</h2>
+                  <p class="white-text">This is your first panel</p>
+                  <h1>* * * * *</h1>
+                </div>
+                <div class="carousel-item amber white-text" href="#two!">
+                  <h2>Second Panel</h2>
+                  <p class="white-text">This is your second panel</p>
+                  <h1>* * * * *</h1>
+                </div>
+                <div class="carousel-item green white-text" href="#three!">
+                  <h2>Third Panel</h2>
+                  <p class="white-text">This is your third panel</p>
+                  <h1>* * * * *</h1>
+                </div>
+                <div class="carousel-item blue white-text" href="#four!">
+                  <h2>Fourth Panel</h2>
+                  <p class="white-text">This is your fourth panel</p>
+                  <h1>* * * * *</h1>
+                  <button class="btn">LISTO!</button>
+                </div>
               </div>
-              <button class="btn">REGISTRATE</button>
+              
             </div>
           </div>
           
@@ -144,6 +249,6 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-      <script src="js/inicio.js"></script>
+      <script type="text/javascript" src="js/registro.js"></script>
     </body>
   </html>
