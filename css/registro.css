@@ -16,9 +16,12 @@
   background-image: url("../img/registro/slide/slider.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 70vh;
   width:100%;
 }
+  .hero h1{
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 .hero-text{
   color: white;
   font-size: 1em;
@@ -55,4 +58,27 @@
   .hero-text div h1{
     font-size: 40px;
   }
+}
+input[type=text]{
+  text-align: center;
+}
+input[type=text]:focus:not([readonly]){
+  border-bottom: 1px solid black;
+  box-shadow: 0 1px 0 0 black;
+}
+.dropdown-content li>span{
+  color:black;
+}
+
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
+    background-color: black;
+}
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
+    border: 2px solid black;
+}
+.collapsible-body form{
+  padding-bottom: 25px;
+}
+.collapsible-body form p{
+  display: inline;
 }
