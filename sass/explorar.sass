@@ -1,11 +1,34 @@
-.explorar
+@import generales
+
+.explorar-a
   background: url("../img/explorar/slider/slide1.png") no-repeat center
   background-size: cover
   height: 600px
+  padding-top: 10%
   .explorar-1
+    max-width: 290px
+    font-family: helvetica3
+    margin-left: auto
+    margin-right: auto
+    p
+      margin: 0px
+    p:nth-child(1)
+      font-size: 70px
+      line-height: 68px
+    p:nth-child(2)
+      font-size: 22px
+      line-height: 11px
+    p:nth-child(3)
+      font-size: 39px
+      line-height: 46px
+    p:nth-child(4)
+      font-size: 65px
+      line-height: 41px
   .explorar-2
+    padding: 0px 10px
     .search-gento
-      margin-top: 55%
+      box-shadow: -2px 2px 5px rgba(#3b3b3b, 0.4)
+      margin-top: 140px
       margin-left: auto
       margin-right: auto
       background-color: white
@@ -18,9 +41,287 @@
       -o-webkit: 5px
       webkit: 5px
       input[type="search"]
-        boder
         border-bottom: none
         margin-bottom: 0px
         &:focus
           border-bottom: none
           border-bottom-color: rgba(255, 255, 255, 0)
+
+.row.explorar-clothes
+  .explorar-b
+    margin-top: 30px
+    .explorar-3
+      border: 2px solid rgb(0, 0, 0)
+      height: 120px
+      max-width: 290px
+      font-family: helvetica3
+      margin-left: auto
+      margin-right: auto
+      text-align: center
+      padding-top: 20px
+      p
+        margin: 0px
+      p:nth-child(1)
+        font-size: 35px
+        line-height: 11px
+      p:nth-child(2)
+        font-size: 26px
+        line-height: 46px
+      p:nth-child(3)
+        font-size: 49px
+        line-height: 16px
+        letter-spacing: 4px
+  .explorar-prendas
+    margin-top: 30px
+    height: 300px
+    .center
+      a
+        margin: 30px 0px
+
+//SECTION BESTSELLER
+.bestseller
+  margin-top: 100px
+  color: white
+  p.bestseller-title
+    padding-top: 20px
+    font-family: helvetica3
+    font-size: 30px
+    text-align: center
+
+.lSSlideWrapper
+  max-width: 100%
+  overflow: hidden
+  position: relative
+  >.lightSlider:after
+    clear: both
+  .lSSlide
+    -webkit-transform: translate(0px, 0px)
+    -ms-transform: translate(0px, 0px)
+    transform: translate(0px, 0px)
+    -webkit-transition: all 1s
+    -webkit-transition-property: -webkit-transform, height
+    -moz-transition-property: -moz-transform, height
+    -webkit-transition-duration: inherit !important
+    transition-duration: inherit !important
+    -webkit-transition-timing-function: inherit !important
+    transition-timing-function: inherit !important
+  .lSFade
+    position: relative
+  .lSFade > *
+    position: absolute !important
+    top: 0
+    left: 0
+    z-index: 9
+    margin-right: 0
+    width: 100%
+  &.usingCss
+    .lSFade >*
+      opacity: 0
+      -webkit-transition-delay: 0s
+      transition-delay: 0s
+      -webkit-transition-duration: inherit !important
+      transition-duration: inherit !important
+      -webkit-transition-property: opacity
+      transition-property: opacity
+      -webkit-transition-timing-function: inherit !important
+      transition-timing-function: inherit !important
+  .lSFde >*.active
+    z-index: 10
+  &.usingCss
+    .lSFade > *.active
+      opacity: 1
+
+/** /!!! End of core css Should not edit !!!/**/
+
+/* Pager - this is the number below of the slides (are hidden)*/
+.lSPager
+  visibility: hidden
+  width: 100%
+  text-align: center
+  li
+    display: inline-block
+    a
+      display: block
+      padding: 5px
+    &.active
+      a
+        color: black
+
+/* End of pager */
+
+
+/* slider actions */
+.lSAction
+  a
+    color: white
+    text-align: center
+    position: absolute
+    top: 50%
+    -webkit-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    transform: translateY(-50%)
+    cursor: pointer
+    &.lSPrev
+      left: 10px
+      &:before
+        display: block
+    &.lSNext
+      right: 10px
+      &:before
+        display: block
+    &.disabled
+      pointer-events: none
+
+.cS-hidden
+  height: 1px
+  opacity: 0
+  filter: alpha(opacity=0)
+  overflow: hidden
+
+.lSSlideOuter
+  overflow: hidden
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  .lightSlider,
+  .lSPager
+    padding-left: 0
+    list-style: none outside none
+  .lightSlider > *
+    float: left
+  .rightEnd
+    -webkit-animation: rightEnd 0.3s
+    animation: rightEnd 0.3s
+    position: relative
+  .leftEnd
+    -webkit-animation: leftEnd 0.3s
+    animation: leftEnd 0.3s
+    position: relative
+
+  &.lSrtl
+    .rightEnd
+      -webkit-animation: leftEnd 0.3s
+      animation: leftEnd 0.3s
+      position: relative
+
+  &.lSrtl
+    .leftEnd
+      -webkit-animation: rightEnd 0.3s
+      animation: rightEnd 0.3s
+      position: relative
+/* END DEFAUL SLIDE CAROUSEL CSS */
+
+ul
+  list-style: none outside none
+  margin: 0
+  margin-bottom: 5px
+
+.demo .item
+  margin-bottom: 60px
+
+.content-slider li
+  text-align: center
+
+.content-slider img
+  width: 300px
+  height: auto
+  display: block
+  margin-left: auto
+  margin-right: auto
+
+.demo
+  width: 800px
+
+  // CONTENT OF THE SLIDER
+.container-best-slide
+  position: relative
+  .center-best-slide
+    position: absolute
+    top: 30%
+    width: 100%
+    text-align: center
+    .button-best
+      font-family: helvetica2
+      font-size: 20px
+      color: white
+      width: 140px
+      border: 2px solid white
+      padding: 3px 35px
+    p
+      font-size: 14px
+
+//SECTION LAST SELL
+.sell
+  .explorar-d
+    margin-top: 60px
+    .explorar-4
+      font-family: helvetica3
+      margin-left: auto
+      margin-right: auto
+      text-align: center
+      padding-top: 20px
+      p
+        margin: 0px
+      p:nth-child(1)
+        font-size: 50px
+        line-height: 16px
+        letter-spacing: 6px
+      p:nth-child(2)
+        font-size: 40px
+        line-height: 65px
+        letter-spacing: 8px
+  .carousel-sell-css
+    display: block
+    margin-left: auto
+    margin-right: auto
+    height: 380px
+    margin-bottom: 100px
+    .item-sell
+      background: url("../img/explorar/lastsell/01.png") no-repeat
+      background-size: cover
+      width: 700px
+      height: 300px
+      margin-top: 200px
+      display: block
+      margin-left: auto
+      margin-right: auto
+      .row.carousel-text
+        max-width: 460px
+        color: black
+        .carousel-item-1
+          font-size: 10px
+          text-align: center
+          line-height: 13px
+          margin-top: 20px
+          p
+            margin: 0px
+        .carousel-item-2
+          p:nth-child(1)
+            font-size: 30px
+            line-height: 16px
+            margin-bottom: 10px
+          p:nth-child(2)
+            font-size: 14px
+          a, button
+            width: 130px
+            height: 25px
+            line-height: 25px
+            font-size: 10px
+            padding-bottom: 8px
+        .carousel-item-1, .carousel-item-2
+          display: block
+          margin-left: auto
+          margin-right: auto
+      img
+        width: 100px
+        height: auto
+
+@media screen and (max-width: 500px)
+  .carousel-item-2
+    text-align: center
+@media screen and (min-width: 600px)
+  .carousel-text
+    padding-top: 10%

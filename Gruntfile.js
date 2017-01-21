@@ -14,7 +14,6 @@ module.exports = function (grunt) {
         dev: {
             files: {
                 // fichero destino  // fichero .scss
-                "css/index.css" : "sass/index.sass",
                 "css/inicio.css" : "sass/inicio.sass",
                 "css/registro.css" : "sass/registro.sass",
                 "css/explorar.css" : "sass/explorar.sass",
