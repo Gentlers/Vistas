@@ -1,30 +1,58 @@
 @import generales
 
-.parallax-container
-  background-color: rgba(0, 0, 0, 0.6)
-  color: white
+// NOTE: ESTE CAMPO SE HA AÑADIDO
+.background-main
+  background: url("../img/inicio/main/04.png") center top no-repeat
+  background-size: cover
+  width: 100%
+  height: 500px
+  margin-top: 55px
+  text-align: center
+  h1
+    font-family: helvetica2
+    font-weight: bold
+    font-size: 40px
+    max-width: 500px
+    display: block
+    margin: auto
+    padding-top: 15%
+
+// NOTE: ESTE CAMPO SE HA AÑADIDO NOTA SOLO FALTA INSERTAR EL ARCHIVO MP4 DEL VIDEO EN LA CARPETA VIDEO CON EL NOMBRE DE 01.mp4
+.background-video
+  background-color: rgb(30, 30, 30)
+  width: 100%
+  video
+    width: 90%
+    max-height: auto
+    display: block
+    margin: auto
+    padding-top: 50px
+    padding-bottom: 50px
+
+// NOTE: ESTA SECCION ESTA MODIFICADA...
+.why-container
+  padding-top: 20px
+  padding-bottom: 20px
   .row
     p
       text-align: center
       font-family: helvetica2
+      font-size: 20px
     .why-text
       text-align: center
       font-family: helvetica3
       font-size: 25px
     img
+      background-color: black
       display: block
       margin: auto
       max-width: 70px
       height: auto
-      margin-top: 10px
-  .parallax
-    img
-      width: 1200px
-      transform: translate3d(-70%, 103px, 0px)
+      margin-top: 20px
 
 
 
-//INICIO - HOW USE GENTO
+//INICIO - HOW USE GENTO ESTA SECCION NO HA CAMBIADO NADA
 .how
   background: black
   height: 640px
@@ -55,26 +83,95 @@
           height: 440px
 
 
-//INICIO - SELECCIONES RECIENTES
-.selections
-  h3
-    text-align: center
-  .selections1
-    max-height: 370px
-    width: 218px
-    .selections2
-    img
-      max-height: 300px
-      width: 218px
+//CAMPO AÑADIDO ULTIMAS COMPRAS
+.sell
+  .explorar-d
+    margin-top: 60px
+    .explorar-4
+      font-family: helvetica3
+      margin-left: auto
+      margin-right: auto
+      text-align: center
+      padding-top: 20px
+      p
+        margin: 0px
+      p:nth-child(1)
+        font-size: 50px
+        line-height: 16px
+        letter-spacing: 6px
+      p:nth-child(2)
+        font-size: 40px
+        line-height: 65px
+        letter-spacing: 8px
+  .carousel-sell-css
+    display: block
+    margin-left: auto
+    margin-right: auto
+    height: 380px
+    margin-bottom: 60px
+    .item-sell
+      background: url("../img/explorar/lastsell/01.png") no-repeat
+      background-size: cover
+      width: 700px
+      height: 300px
+      margin-top: 200px
+      display: block
+      margin-left: auto
+      margin-right: auto
+      .row.carousel-text
+        max-width: 460px
+        color: black
+        .carousel-item-1
+          font-size: 10px
+          text-align: center
+          line-height: 13px
+          margin-top: 20px
+          p
+            margin: 0px
+        .carousel-item-2
+          p:nth-child(1)
+            font-size: 30px
+            line-height: 16px
+            margin-bottom: 10px
+          p:nth-child(2)
+            font-size: 14px
+          a, button
+            width: 150px
+            height: 25px
+            line-height: 25px
+            font-size: 10px
+            padding-bottom: 8px
+        .carousel-item-1, .carousel-item-2
+          display: block
+          margin-left: auto
+          margin-right: auto
+      img
+        width: 100px
+        height: auto
 
-.card
-  margin-left: auto
-  margin-right: auto
-  .card-content
-    padding: 10px
-    .card-title-size
-      font-size: 18px
-      line-height: 30px
+@media screen and (max-width: 500px)
+  .carousel-item-2
+    text-align: center
+@media screen and (min-width: 600px)
+  .carousel-text
+    padding-top: 10%
+
+// NOTE: CAMPO AÑADIDO DE PARALLAX LLAMADA A LA ACCION
+.parallax-container
+  background-color: rgba(0, 0, 0, 0.6)
+  color: white
+  .row
+    p
+      text-align: center
+      font-family: helvetica2
+    .why-text
+      text-align: center
+      font-family: helvetica2
+      font-size: 35px
+  .parallax
+    img
+      width: 100%
+      transform: translate3d(-150%, 103px, 0px)
 
 //INICIO - PARTNERS
 .partner

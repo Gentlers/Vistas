@@ -17,7 +17,8 @@ module.exports = function (grunt) {
                 "css/inicio.css" : "sass/inicio.sass",
                 "css/registro.css" : "sass/registro.sass",
                 "css/explorar.css" : "sass/explorar.sass",
-                "css/generales.css" : "sass/generales.sass"
+                "css/generales.css" : "sass/generales.sass",
+                "css/pronto.css" : "sass/pronto.sass"
             }
         }
     },

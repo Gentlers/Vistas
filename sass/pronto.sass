@@ -1,0 +1,88 @@
+@import generales
+
+.pronto
+  background: url("../img/pronto/01.png") center no-repeat
+  background: cover
+  width: auto
+  height: 800px
+  color: white
+  padding-top: 100px
+
+.pronto-content
+  max-width: 500px
+  display: block
+  margin: auto
+  img
+    width: 250px
+    height: auto
+  p.pronto-content-text1
+    font-size: 20px
+    line-height: 20px
+  p.pronto-content-text2
+    font-size: 19px
+    font-weight: bold
+    padding-top: 17px
+
+
+.pronto-form
+  min-width: 320px
+  max-width: 360px
+  display: block
+  margin: auto
+  padding-top: 20px
+
+.pronto-date-know
+  text-align: center
+  width: 400px
+  .input-field
+    text-align: center
+
+/* label color */
+.input-field
+  color: white
+  label
+    font-size: 1.2rem
+  label.active
+    font-size: 1rem
+
+.input-field input[type=text]:focus + label
+  color: white
+
+.input-field input[type=email]:focus + label
+  color: white
+
+.input-field input[type=tel]:focus + label
+  color: white
+
+/* label focus color */
+input:not([type]),
+input[type=text],
+input[type=email],
+input[type=tel]
+  color: white
+  text-align: center
+  font-size: 1.2rem
+
+
+/* label underline focus color */
+.input-field input[type=text]:focus
+  border-bottom: 1px solid white
+  box-shadow: 0 1px 0 0 white
+
+.input-field input[type=email]:focus
+  border-bottom: 1px solid white
+  box-shadow: 0 1px 0 0 white
+
+.input-field input[type=tel]:focus
+  border-bottom: 1px solid white
+  box-shadow: 0 1px 0 0 white
+
+/* valid color */
+.input-field input[type=text].valid, input[type=email].valid, input[type=tel].valid
+  border-bottom: 1px solid #000
+  box-shadow: 0 1px 0 0 #000
+
+/* invalid color */
+.input-field input[type=email].invalid, input[type=tel].invalid
+  border-bottom: 1px solid red
+  box-shadow: 0 1px 0 0 red
