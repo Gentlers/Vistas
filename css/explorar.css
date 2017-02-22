@@ -268,5 +268,26 @@ html {
 @media screen and (min-width: 600px) {
   .carousel-text {
     padding-top: 10%; } }
+.compras {
+  margin-top: 100.1px; }
+
+.vistaPrendas img {
+  max-width: 100px;
+  max-height: 130px; }
+
+.vistaCompleta img {
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: auto; }
+
+.comprasTitle {
+  font-size: 24px;
+  line-height: 16px; }
+
+.botonesComprar {
+  width: 100%;
+  font-family: helvetica2;
+  font-size: 17px; }
 
 /*# sourceMappingURL=explorar.css.map */
