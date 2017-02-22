@@ -21,23 +21,7 @@ module.exports = function (grunt) {
                 "css/pronto.css" : "sass/pronto.sass"
             }
         }
-    },
-    // BrowserSync task config
-    browserSync: {
-      default_options: {
-        bsFiles: {
-          src: [
-            "css/*.css",
-            "js/*.js",
-            "*.html"
-          ]
-        },
-        options: {
-          watchTask: true,
-          proxy: "http://gento/"
-          }
-        }
-      }
+    }
 
     });
 
@@ -46,5 +30,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-browser-sync');
 
  //Tarea por defecto
- grunt.registerTask('default', ['browserSync', 'watch']);
+ grunt.registerTask('default', ['watch']);
 };
