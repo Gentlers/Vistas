@@ -5,6 +5,7 @@ $(document).ready(function(){
   $('.scrollspy').scrollSpy();
   $('.collapsible').collapsible();
   $('select').material_select();
+  $('.tooltipped').tooltip({delay: 50});
   $('.materialboxed').materialbox();
   $('.carousel.carousel-slider').carousel({full_width: true});
   $('.carousel-sell').carousel();
